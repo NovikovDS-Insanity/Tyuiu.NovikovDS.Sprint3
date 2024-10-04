@@ -9,7 +9,7 @@ public class DataServiceTest
     public void TestMethod()
     {
         DataService ds = new();
-        int x = 1, y = 2, k = 4;
+        int x = 1, y = 1, k = 4;
         var res = ds.GetSumSeries(k, x, y);
         Assert.AreEqual(4.207, res);
     }

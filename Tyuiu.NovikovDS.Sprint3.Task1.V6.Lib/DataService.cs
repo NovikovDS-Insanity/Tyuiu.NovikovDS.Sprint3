@@ -8,7 +8,7 @@ namespace Tyuiu.NovikovDS.Sprint3.Task1.V6.Lib
         {
             double S = 0;
             int i = startValue;
-            while (i != stopValue)
+            while (i != (stopValue + 1))
             {
                 S += (Math.Pow(value, i) + 1) * Math.Sin(i);
                 i++;
