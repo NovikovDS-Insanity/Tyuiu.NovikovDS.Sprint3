@@ -7,7 +7,7 @@ namespace Tyuiu.NovikovDS.Sprint3.Task1.V6.Lib
         public double GetSumSeries(int value, int startValue, int stopValue)
         {
             double S = 0;
-            int i = startValue - 1;
+            int i = startValue;
             while (i != stopValue)
             {
                 S += (Math.Pow(value, i) + 1) * Math.Sin(i);
