@@ -9,8 +9,8 @@ public class DataServiceTest
     public void TestMethod()
     {
         DataService ds = new();
-        int x = 5, a1 = 1, a2 = 3, b1 = 1, b2 = 12;
-        var res = ds.GetSumSumSeries(x, a1, a2, b1, b2);
-        Assert.AreEqual(31.553, res);
+        int x = 5, a1 = 1, b1 = 1, a2 = 3, b2 = 12;
+        var res = ds.GetSumSumSeries(x, a1, b1, a2, b2);
+        Assert.AreEqual(118.212, res);
     }
 }

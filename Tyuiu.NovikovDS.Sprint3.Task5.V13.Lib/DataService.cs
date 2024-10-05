@@ -9,9 +9,9 @@ namespace Tyuiu.NovikovDS.Sprint3.Task5.V13.Lib
             double sum = 0;
             for (int i = startValue1; i <= stopValue1; i++)
             {
-                for (int j = startValue2; j < stopValue2; j++)
+                for (int j = startValue2; j <= stopValue2; j++)
                 {
-                    sum += Math.Cos(x) + (j / 2);
+                    sum += (Math.Cos(x) + (j / 2));
                 }
             }
             return Math.Round(sum, 3);
