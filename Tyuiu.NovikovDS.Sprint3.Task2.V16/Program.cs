@@ -18,14 +18,31 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Введите значение X:");
-int x = Convert.ToInt32(Console.ReadLine());
+int x, y, n, temp;
 
-Console.WriteLine("Введите значение Y:");
-int y = Convert.ToInt32(Console.ReadLine());
+do
+{
+    Console.WriteLine("Введите начальное значение:");
+    x = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Введите конечное значение:");
+    y = Convert.ToInt32(Console.ReadLine());
+
+    temp = 0;
+    for (int i = x; i < y; i++)
+    {
+        if (i == 0)
+        {
+            temp = 1;
+            break;
+        }
+    }
+    if (temp == 1) Console.WriteLine("Неверный промежуток, встречается деление на ноль.");
+    if (x > y) Console.WriteLine("Неверный промежуток, начальное значение больше конечного.");
+} while ((temp == 1) || (x > y));
 
 Console.WriteLine("Введите значение N:");
-int n = Convert.ToInt32(Console.ReadLine());
+n = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

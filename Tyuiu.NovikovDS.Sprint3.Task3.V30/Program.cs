@@ -21,8 +21,8 @@ Console.WriteLine("*************************************************************
 string value = "fyyklbtyn ygrc vfyyyyh";
 char chr = 'y';
 
-Console.WriteLine("Исходная строка - " + value);
-Console.WriteLine("Исходный символ - " + chr);
+Console.WriteLine("* Исходная строка - " + value);
+Console.WriteLine("* Исходный символ - " + chr);
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

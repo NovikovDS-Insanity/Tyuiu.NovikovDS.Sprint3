@@ -18,11 +18,18 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Введите значение X:");
-int x = Convert.ToInt32(Console.ReadLine());
+int x, y;
 
-Console.WriteLine("Введите значение Y:");
-int y = Convert.ToInt32(Console.ReadLine());
+do
+{
+    Console.WriteLine("Введите начальное значение:");
+    x = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Введите конечное значение:");
+    y = Convert.ToInt32(Console.ReadLine());
+
+    if (x > y) Console.WriteLine("Начальное значение не может быть больше конечного, попробуйте ещё раз.");
+} while (x > y);
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
