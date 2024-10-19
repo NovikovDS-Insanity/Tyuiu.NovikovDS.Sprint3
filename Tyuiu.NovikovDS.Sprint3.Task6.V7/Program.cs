@@ -29,7 +29,6 @@ do
     a2 = Convert.ToInt32(Console.ReadLine());
 
     if (a1 > a2) Console.WriteLine("Начальное значение не может быть больше конечного, попробуйте ещё раз.");
-    if ((a1 < 1) || (a2 < 2)) Console.WriteLine("Значения должны быть положительными.");
 
 } while (a1 > a2);
 

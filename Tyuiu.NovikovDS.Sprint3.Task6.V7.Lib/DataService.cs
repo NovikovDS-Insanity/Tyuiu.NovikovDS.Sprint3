@@ -9,10 +9,20 @@ namespace Tyuiu.NovikovDS.Sprint3.Task6.V7.Lib
             int sum = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                for (int j = 1; j <= i; j++)
+                if (i < 0)
                 {
-                    if (i % j == 0) sum += j;
-                }                 
+                    for (int j = -1; j >= i; j--)
+                    {
+                        if (i % j == 0) sum -= j;
+                    }
+                }
+                else
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        if (i % j == 0) sum += j;
+                    }
+                }
             }
             return sum;
         }
