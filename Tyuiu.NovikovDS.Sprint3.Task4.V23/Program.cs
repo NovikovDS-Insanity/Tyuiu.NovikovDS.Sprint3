@@ -6,7 +6,7 @@ Console.Title = "Спринт #3 | Выполнил: Новиков Д. С. | Р
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* Спринт #3                                                               *");
-Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
+Console.WriteLine("* Тема: Использование операторов continue и break в циклах                *");
 Console.WriteLine("* Задание #4                                                              *");
 Console.WriteLine("* Вариант #23                                                             *");
 Console.WriteLine("* Выполнил: Новиков Д. С. | РППб-24-1                                     *");
